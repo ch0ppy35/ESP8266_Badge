@@ -20,6 +20,8 @@ void setup()
   display.setFont(ArialMT_Plain_10);
   display.setTextAlignment(TEXT_ALIGN_LEFT);
 
+  drawImageDemo();
+
 }
 
 void scroll_nets()
@@ -47,9 +49,9 @@ void scroll_nets()
 }
 void drawImageDemo() {
   display.clear();
-  display.drawXbm(0, 0, defconLogo_width, defconLogo_height, defconLogo_bits);
-  delay(600);
+  display.drawXbm(0, 0, xbm_width, xbm_height, xbm_bits);
   display.display();
+  delay(800);
 }
 
 void loop()
